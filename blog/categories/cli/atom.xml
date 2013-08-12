@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://alpha080.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: cli | My Octopress Blog]]></title>
+  <link href="http://alpha080.github.com/blog/categories/cli/atom.xml" rel="self"/>
   <link href="http://alpha080.github.com/"/>
   <updated>2013-08-12T13:41:35+08:00</updated>
   <id>http://alpha080.github.com/</id>
@@ -22,7 +22,7 @@
 
 <h3>一、dictd</h3>
 
-<p>这是一个很&#8221;古老&#8221;的软件了，使用 dict 协议，gentoo源里面提供了很多词典，我比较喜欢使用 dictd-wn，也就是 <a href="http://wordnet.princeton.edu/">wordnet</a></p>
+<p>这是一个很"古老"的软件了，使用 dict 协议，gentoo源里面提供了很多词典，我比较喜欢使用 dictd-wn，也就是 <a href="http://wordnet.princeton.edu/">wordnet</a></p>
 
 <h4>安装</h4>
 
@@ -31,7 +31,7 @@
 
 <h4>使用</h4>
 
-<p>如果想要搜索 &#8220;foo&#8221;，输入:</p>
+<p>如果想要搜索 "foo"，输入:</p>
 
 <pre><code>dict foo
 </code></pre>
@@ -66,19 +66,6 @@
 <pre><code>alias xxx="python dict.py"
 source .bashrc
 </code></pre>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[hello world]]></title>
-    <link href="http://alpha080.github.com/blog/2013/03/03/hello-world/"/>
-    <updated>2013-03-03T18:53:00+08:00</updated>
-    <id>http://alpha080.github.com/blog/2013/03/03/hello-world</id>
-    <content type="html"><![CDATA[<p>虽然很少写博客，但是觉得留一个博客还是有必要的，起码留给自己一点在东方的生存空间。</p>
-
-<p>不知道我会在这个博客写些什么，也许只是给自己的生活备个份，在这浩瀚无边的宇宙中留个脚印。</p>
-
-<p>无论这儿会留下什么，不管答案是不是42，作为开头，一定是 Hello, world!</p>
 ]]></content>
   </entry>
   
