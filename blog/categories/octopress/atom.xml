@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Octopress | My Octopress Blog]]></title>
+  <link href="http://alpha080.github.com/blog/categories/octopress/atom.xml" rel="self"/>
+  <link href="http://alpha080.github.com/"/>
+  <updated>2013-08-12T19:59:07+08:00</updated>
+  <id>http://alpha080.github.com/</id>
+  <author>
+    <name><![CDATA[alpha080]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[rake new_post 出错]]></title>
+    <link href="http://alpha080.github.com/blog/2013/08/12/rake-new-post-chu-cuo/"/>
+    <updated>2013-08-12T19:49:00+08:00</updated>
+    <id>http://alpha080.github.com/blog/2013/08/12/rake-new-post-chu-cuo</id>
+    <content type="html"><![CDATA[<p>今天更新博客的时候，运行命令提示错误:</p>
+
+<pre><code>You have already activated rake 0.9.6, but your Gemfile requires rake 0.9.2.2. Using bundle exec may solve this.
+</code></pre>
+
+<p>由于我并不使用 ruby，所以看到这提示百思不得其解，难道还要我降级 rake 不成？最后索性把 Octopress 目录下的文件内容查看了一遍，发现 Gemfile 里面涉及了 rake 版本，于是进行了修改:</p>
+
+<pre><code>gem 'rake', '~&gt; 0.9.6'
+</code></pre>
+
+<p>重新运行命令，yeah!</p>
+]]></content>
+  </entry>
+  
+</feed>

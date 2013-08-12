@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
+  <title>Category: Octopress - My Octopress Blog</title>
   <meta name="author" content="alpha080">
 
   
-  <meta name="description" content="今天更新博客的时候，运行命令提示错误: You have already activated rake 0.9.6, but your Gemfile requires rake 0.9.2.2. Using bundle exec may solve this. 由于我并不使用 ruby， &hellip;">
+  <meta name="description" content="Category: Octopress">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://alpha080.github.com/">
+  <link rel="canonical" href="http://alpha080.github.com/blog/categories/octopress/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -74,190 +74,40 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/12/rake-new-post-chu-cuo/">Rake New_post 出错</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-12T19:49:00+08:00" pubdate data-updated="true">Aug 12<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/12/rake-new-post-chu-cuo/#disqus_thread">Comments</a>
-        
-      </p>
+    <h1 class="entry-title">Category: Octopress</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-  <div class="entry-content"><p>今天更新博客的时候，运行命令提示错误:</p>
 
-<pre><code>You have already activated rake 0.9.6, but your Gemfile requires rake 0.9.2.2. Using bundle exec may solve this.
-</code></pre>
+  
+  <h2>2013</h2>
 
-<p>由于我并不使用 ruby，所以看到这提示百思不得其解，难道还要我降级 rake 不成？最后索性把 Octopress 目录下的文件内容查看了一遍，发现 Gemfile 里面涉及了 rake 版本，于是进行了修改:</p>
+<article>
+  
+<h1><a href="/blog/2013/08/12/rake-new-post-chu-cuo/">rake new_post 出错</a></h1>
+<time datetime="2013-08-12T19:49:00+08:00" pubdate><span class='month'>Aug</span> <span class='day'>12</span> <span class='year'>2013</span></time>
 
-<pre><code>gem 'rake', '~&gt; 0.9.6'
-</code></pre>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/octopress/'>Octopress</a></span>
+</footer>
 
-<p>重新运行命令，yeah!</p>
+
+</article>
+
 </div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/">命令行下使用词典</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
 
   
+</article>
 
-
-<time datetime="2013-08-12T08:22:00+08:00" pubdate data-updated="true">Aug 12<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Linux 下各种词典百花齐放，从我以前用的 stardict 到现在的 goldendict，个个功能都很强大，但是有时候我只想查词义，这时候觉得前面几个软件都过于重量级，所以就找了一些在命令行下使用的词典。</p>
-
-<h3>一、dictd</h3>
-
-<p>这是一个很&#8221;古老&#8221;的软件了，使用 dict 协议，gentoo源里面提供了很多词典，我比较喜欢使用 dictd-wn，也就是 <a href="http://wordnet.princeton.edu/">wordnet</a></p>
-
-<h4>安装</h4>
-
-<pre><code>emerge -av dictd-wn
-</code></pre>
-
-<h4>使用</h4>
-
-<p>如果想要搜索 &#8220;foo&#8221;，输入:</p>
-
-<pre><code>dict foo
-</code></pre>
-
-<p>上面的结果会把你安装的所有词典的查询结果显示出来，如果只想在 wordnet 里面查找，只要:</p>
-
-<pre><code>dict -d wn foo
-</code></pre>
-
-<p>不过每次都要输入这么长的命令实在是太烦人了，这时当然是要:</p>
-
-<pre><code>alias xxx="dict -d wn"
-</code></pre>
-
-<h3>二、wn</h3>
-
-<p>事实上 wn 就是 wordnet 在命令行下的查询命令，只不过输出的格式不佳，所以被我弃用了。
-如果一定要用，执行:</p>
-
-<pre><code>wn -over foo
-</code></pre>
-
-<h3>三、<a href="http://sourceforge.net/projects/yodao-free/">youdao-free</a></h3>
-
-<p>这是一个 python 脚本，用起来蛮方便的，输出格式也很好。下载下来后直接执行:</p>
-
-<pre><code>python dict.py foo
-</code></pre>
-
-<p>当然了，做为懒人，肯定要:</p>
-
-<pre><code>alias xxx="python dict.py"
-source .bashrc
-</code></pre>
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/03/03/hello-world/">Hello World</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-03-03T18:53:00+08:00" pubdate data-updated="true">Mar 3<span>rd</span>, 2013</time>
-        
-         | <a href="/blog/2013/03/03/hello-world/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>虽然很少写博客，但是觉得留一个博客还是有必要的，起码留给自己一点在东方的生存空间。</p>
-
-<p>不知道我会在这个博客写些什么，也许只是给自己的生活备个份，在这浩瀚无边的宇宙中留个脚印。</p>
-
-<p>无论这儿会留下什么，不管答案是不是42，作为开头，一定是 Hello, world!</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -282,7 +132,7 @@ source .bashrc
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/alpha080">@alpha080</a> on GitHub
@@ -315,6 +165,7 @@ source .bashrc
 
   
 </aside>
+
 
     </div>
   </div>

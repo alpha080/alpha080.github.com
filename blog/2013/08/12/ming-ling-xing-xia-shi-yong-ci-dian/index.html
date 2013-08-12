@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <title>命令行下使用词典 - My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <meta name="author" content="alpha080">
 
   
   <meta name="description" content="Linux 下各种词典百花齐放，从我以前用的 stardict 到现在的 goldendict，个个功能都很强大，但是有时候我只想查词义，这时候觉得前面几个软件都过于重量级，所以就找了一些在命令行下使用的词典。 一、dictd 这是一个很&#8221;古老&#8221;的软件了，使用 dict &hellip;">
@@ -24,12 +24,24 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="http://feeds.feedburner.com/alpha080" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21306990-5']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
@@ -43,11 +55,11 @@
 
 </header>
   <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  <li><a href="http://feeds.feedburner.com/alpha080" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   
 </ul>
   
-<form action="http://google.com/search" method="get">
+<form action="http://www.google.com/search" method="get">
   <fieldset role="search">
     <input type="hidden" name="q" value="site:alpha080.github.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
@@ -84,6 +96,8 @@
 
 
 <time datetime="2013-08-12T08:22:00+08:00" pubdate data-updated="true">Aug 12<span>th</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
     
@@ -146,7 +160,7 @@ source .bashrc
       
   
 
-<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+<span class="byline author vcard">Posted by <span class="fn">alpha080</span></span>
 
       
 
@@ -174,8 +188,6 @@ source .bashrc
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://alpha080.github.com/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/" data-via="" data-counturl="http://alpha080.github.com/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/" >Tweet</a>
-  
   
   
 </div>
@@ -186,9 +198,17 @@ source .bashrc
         <a class="basic-alignment left" href="/blog/2013/03/03/hello-world/" title="Previous Post: hello world">&laquo; hello world</a>
       
       
+        <a class="basic-alignment right" href="/blog/2013/08/12/rake-new-post-chu-cuo/" title="Next Post: rake new_post 出错">rake new_post 出错 &raquo;</a>
+      
     </p>
   </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -199,6 +219,10 @@ source .bashrc
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/08/12/rake-new-post-chu-cuo/">rake new_post 出错</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/">命令行下使用词典</a>
       </li>
     
@@ -207,6 +231,35 @@ source .bashrc
       </li>
     
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/alpha080">@alpha080</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'alpha080',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
@@ -221,12 +274,28 @@ source .bashrc
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Your Name -
+  Copyright &copy; 2013 - alpha080 -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'alpha080';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://alpha080.github.com/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/';
+        var disqus_url = 'http://alpha080.github.com/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
