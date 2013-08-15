@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[后飞的老笨鸟]]></title>
   <link href="http://alpha080.github.com/atom.xml" rel="self"/>
   <link href="http://alpha080.github.com/"/>
-  <updated>2013-08-12T19:59:07+08:00</updated>
+  <updated>2013-08-15T21:10:33+08:00</updated>
   <id>http://alpha080.github.com/</id>
   <author>
     <name><![CDATA[alpha080]]></name>
@@ -12,6 +12,160 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[jQuery Fundamentals 笔记 01]]></title>
+    <link href="http://alpha080.github.com/blog/2013/08/13/jquery-fundamentals-note-01/"/>
+    <updated>2013-08-13T08:49:00+08:00</updated>
+    <id>http://alpha080.github.com/blog/2013/08/13/jquery-fundamentals-note-01</id>
+    <content type="html"><![CDATA[<p>jQuery 是目前使用最广泛的 javascript 函数库，全球前10000个访问最高的网站中，有65%使用了 jQuery，是目前最受欢迎的 JavaScript 库。之所以这么受欢迎，是因为 jQuery 能让你做到 &#8220;Write less, do more&#8221;.</p>
+
+<p>在线教程中，名气较大有 <a href="http://jqfundamentals.com/">jQuery Fundamentals</a> , 我准备写些相关笔记方便自己复习。</p>
+
+<h2>JavaScript Basics</h2>
+
+<h3>how to write comments</h3>
+
+<pre><code>// I love emmet!
+var foo;
+</code></pre>
+
+<p>// 用于单行</p>
+
+<pre><code>/* hehe
+   hehe
+*/
+
+function sass(foo /* blabal */, bar /* blabla */) {
+}
+</code></pre>
+
+<p>/*  */ 用于多行或者行内</p>
+
+<h3>The building blocks of JavaScript</h3>
+
+<h4>Var</h4>
+
+<p>提问: 变量名不能以什么开头？</p>
+
+<h4>Functions</h4>
+
+<pre><code>var addTwoNum = function() {
+    return a+b;
+}
+</code></pre>
+
+<p>function expression</p>
+
+<pre><code>function addTwoNum(a, b) {
+    return a+b;
+}
+</code></pre>
+
+<p>function declaration</p>
+
+<p>两者都可以表达函数，但是最好用前者，为什么？</p>
+
+<h4>Functions and variable scope</h4>
+
+<p>简单说就是警惕 global, 变量前面没事就写个 var，安全第一～</p>
+
+<h4>Objects</h4>
+
+<p>以下五种不是 Objects</p>
+
+<ul>
+<li>strings(text)</li>
+<li>booleans(true/false)</li>
+<li>numbers</li>
+<li>undefined</li>
+<li>null</li>
+</ul>
+
+
+<h4>Accessing properties</h4>
+
+<pre><code>var person = {
+    name: 'bush',
+    age: 3
+};
+
+console.log('person[age]');
+console.log(person.name);
+</code></pre>
+
+<p>Bracket notation and dot notation</p>
+
+<h4>Objects methods</h4>
+
+<pre><code>var person = {
+    name: 'foo',
+    age: 3,
+    greet: function(name) {
+        console('Hi' + name);
+        }
+    };
+
+person.greet(person.name);
+</code></pre>
+
+<h4>The meaning of <em>this</em></h4>
+
+<pre><code>window.color = "red";
+var o = {color: "blue"};
+
+function sayColor() {
+    alert(this.color);
+}
+
+sayColor();     //"red"
+
+o.sayColor = sayColor;
+o.sayColor();   //"blue"
+</code></pre>
+
+<p>用下面的两个函数可以强制改变 this 指定的对象:
+.call() vs .apply()
+这两个函数实在是太像了，以至于看完本章以后脑子里面还是一片糨糊，也可以看看 <a href="http://stackoverflow.com/questions/1986896/what-is-the-difference-between-call-and-apply" title="What is the difference between using call and apply to invoke a function?">stackoverflow</a></p>
+
+<pre><code>foo.apply(person, ["hello", "wow"]);
+foo.call(person, "hello", "wow");
+</code></pre>
+
+<p>不管是哪一个，都有能对某个对象直接执行本身不具备的 method 而不必修改对象本身的妙用。</p>
+
+<h4>Objects in jQuery</h4>
+
+<p>简单说就是利用了 CSS 的选择符的便利性</p>
+
+<h4>Arrays</h4>
+
+<p>注意索引从0开始即可</p>
+
+<h3>Logic and Truthiness</h3>
+
+<p>1 is truthy, and there are five values in JavaScript that is falsy.</p>
+
+<ul>
+<li>null</li>
+<li>NaN</li>
+<li>0</li>
+<li>&#8221;</li>
+<li>undefined</li>
+</ul>
+
+
+<h4>The Ternary Operator</h4>
+
+<pre><code>var name = (dim === "true") ? "yes" : "no";
+</code></pre>
+
+<h3>结语</h3>
+
+<p>好吧，成功地把以前的语文老师改造成体育老师了，顺便也打了几行代码，感觉神清气爽多了～
+打键盘，更健康！</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[rake new_post 出错]]></title>
