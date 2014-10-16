@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - 后飞的老笨鸟</title>
+  <title>rake new_post 出错 - 后飞的老笨鸟</title>
   <meta name="author" content="alpha080">
 
   
-  <meta name="description" content="Blog Archive 2014 我所用到的 Sublimetext 插件
-Oct 16 2014 posted in editor 2013 jQuery Fundamentals 笔记 02
-Aug 24 2013 posted in jQuery jQuery Fundamentals &hellip;">
+  <meta name="description" content="今天更新博客的时候，运行命令提示错误: You have already activated rake 0.9.6, but your Gemfile requires rake 0.9.2.2. Using bundle exec may solve this. 由于我并不使用 ruby， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Aug 24 2013 posted in jQuery jQuery Fundamentals &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://alpha080.github.com/blog/archives/">
+  <link rel="canonical" href="http://alpha080.github.com/blog/20130812/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -80,105 +78,103 @@ Aug 24 2013 posted in jQuery jQuery Fundamentals &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Rake New_post 出错</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-12T19:49:00+08:00" pubdate data-updated="true">Aug 12<span>th</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><p>今天更新博客的时候，运行命令提示错误:</p>
 
-  
-  <h2>2014</h2>
+<pre><code>You have already activated rake 0.9.6, but your Gemfile requires rake 0.9.2.2. Using bundle exec may solve this.
+</code></pre>
 
-<article>
-  
-<h1><a href="/blog/20141016/">我所用到的 Sublimetext 插件</a></h1>
-<time datetime="2014-10-16T23:06:00+08:00" pubdate><span class='month'>Oct</span> <span class='day'>16</span> <span class='year'>2014</span></time>
+<p>由于我并不使用 ruby，所以看到这提示百思不得其解，难道还要我降级 rake 不成？最后索性把 Octopress 目录下的文件内容查看了一遍，发现 Gemfile 里面涉及了 rake 版本，于是进行了修改:</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/editor/'>editor</a></span>
-</footer>
+<pre><code>gem 'rake', '~&gt; 0.9.6'
+</code></pre>
 
-
-</article>
-
-
-
-  
-  <h2>2013</h2>
-
-<article>
-  
-<h1><a href="/blog/20130824/">jQuery Fundamentals 笔记 02</a></h1>
-<time datetime="2013-08-24T08:07:00+08:00" pubdate><span class='month'>Aug</span> <span class='day'>24</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/jquery/'>jQuery</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/20130813/">jQuery Fundamentals 笔记 01</a></h1>
-<time datetime="2013-08-13T08:49:00+08:00" pubdate><span class='month'>Aug</span> <span class='day'>13</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/jquery/'>jQuery</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/20130812/">rake new_post 出错</a></h1>
-<time datetime="2013-08-12T19:49:00+08:00" pubdate><span class='month'>Aug</span> <span class='day'>12</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/octopress/'>Octopress</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/20130812/">命令行下使用词典</a></h1>
-<time datetime="2013-08-12T08:22:00+08:00" pubdate><span class='month'>Aug</span> <span class='day'>12</span> <span class='year'>2013</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/cli/'>cli</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/20130303/">hello world</a></h1>
-<time datetime="2013-03-03T18:53:00+08:00" pubdate><span class='month'>Mar</span> <span class='day'>03</span> <span class='year'>2013</span></time>
-
-
-</article>
-
+<p>重新运行命令，yeah!</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">alpha080</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-12T19:49:00+08:00" pubdate data-updated="true">Aug 12<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/20130812/" title="Previous Post: 命令行下使用词典">&laquo; 命令行下使用词典</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/20130813/" title="Next Post: jQuery Fundamentals 笔记 01">jQuery Fundamentals 笔记 01 &raquo;</a>
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -186,7 +182,7 @@ Aug 24 2013 posted in jQuery jQuery Fundamentals &hellip;">
   
     <section>
 <h1>QR-Code<abbr title="The word 'QR Code' is a registered trademark of DENSO WAVE INCORPORATED. It applies only for the word 'QR Code', not for image.">&trade;</abbr></h1>
-<a href="http://alpha080.github.com/blog/archives/index.html"><img src="http://chart.apis.google.com/chart?chs=100x100&cht=qr&chld=|0&chco=165B94&chl=http://alpha080.github.com/blog/archives/index.html" alt="post-qrcode"></a></section>
+<a href="http://alpha080.github.com/blog/20130812/"><img src="http://chart.apis.google.com/chart?chs=100x100&cht=qr&chld=|0&chco=165B94&chl=http://alpha080.github.com/blog/20130812/" alt="post-qrcode"></a></section>
 <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
@@ -285,7 +281,10 @@ Aug 24 2013 posted in jQuery jQuery Fundamentals &hellip;">
       var disqus_shortname = 'inewnew';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://alpha080.github.com/blog/20130812/';
+        var disqus_url = 'http://alpha080.github.com/blog/20130812/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

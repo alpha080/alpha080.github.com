@@ -4,7 +4,7 @@
   <title><![CDATA[Category: jQuery | 后飞的老笨鸟]]></title>
   <link href="http://alpha080.github.com/blog/categories/jquery/atom.xml" rel="self"/>
   <link href="http://alpha080.github.com/"/>
-  <updated>2013-08-15T21:36:32+08:00</updated>
+  <updated>2014-10-16T23:52:23+08:00</updated>
   <id>http://alpha080.github.com/</id>
   <author>
     <name><![CDATA[alpha080]]></name>
@@ -14,10 +14,24 @@
 
   
   <entry>
+    <title type="html"><![CDATA[jQuery Fundamentals 笔记 02]]></title>
+    <link href="http://alpha080.github.com/blog/20130824/"/>
+    <updated>2013-08-24T08:07:00+08:00</updated>
+    <id>http://alpha080.github.com/blog/jquery-fundamentals-note-02</id>
+    <content type="html"><![CDATA[<p>``` py Python hello.py</p>
+
+<pre><code>print 'hello!'
+</code></pre>
+
+<p>```</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[jQuery Fundamentals 笔记 01]]></title>
-    <link href="http://alpha080.github.com/blog/2013/08/13/jquery-fundamentals-note-01/"/>
+    <link href="http://alpha080.github.com/blog/20130813/"/>
     <updated>2013-08-13T08:49:00+08:00</updated>
-    <id>http://alpha080.github.com/blog/2013/08/13/jquery-fundamentals-note-01</id>
+    <id>http://alpha080.github.com/blog/jquery-fundamentals-note-01</id>
     <content type="html"><![CDATA[<p>jQuery 是目前使用最广泛的 javascript 函数库，全球前10000个访问最高的网站中，有65%使用了 jQuery，是目前最受欢迎的 JavaScript 库。之所以这么受欢迎，是因为 jQuery 能让你做到 "Write less, do more".</p>
 
 <p>在线教程中，名气较大有 <a href="http://jqfundamentals.com/">jQuery Fundamentals</a> , 我准备写些相关笔记方便自己复习。</p>
@@ -128,9 +142,13 @@ o.sayColor();   //"blue"
 .call() vs .apply()
 这两个函数实在是太像了，以至于看完本章以后脑子里面还是一片糨糊，也可以看看 <a href="http://stackoverflow.com/questions/1986896/what-is-the-difference-between-call-and-apply" title="What is the difference between using call and apply to invoke a function?">stackoverflow</a></p>
 
+<p>``` js</p>
+
 <pre><code>foo.apply(person, ["hello", "wow"]);
 foo.call(person, "hello", "wow");
 </code></pre>
+
+<p>```</p>
 
 <p>不管是哪一个，都有能对某个对象直接执行本身不具备的 method 而不必修改对象本身的妙用。</p>
 
@@ -157,8 +175,12 @@ foo.call(person, "hello", "wow");
 
 <h4>The Ternary Operator</h4>
 
+<p>``` js</p>
+
 <pre><code>var name = (dim === "true") ? "yes" : "no";
 </code></pre>
+
+<p>```</p>
 
 <h3>结语</h3>
 

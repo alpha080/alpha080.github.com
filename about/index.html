@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>命令行下使用词典 - 后飞的老笨鸟</title>
+  <title>about - 后飞的老笨鸟</title>
   <meta name="author" content="alpha080">
 
   
-  <meta name="description" content="Linux 下各种词典百花齐放，从我以前用的 stardict 到现在的 goldendict，个个功能都很强大，但是有时候我只想查词义，这时候觉得前面几个软件都过于重量级，所以就找了一些在命令行下使用的词典。 一、dictd 这是一个很&#8221;古老&#8221;的软件了，使用 dict &hellip;">
+  <meta name="description" content="About 一只懒散的笨鸟，只会伸手，只会当 copy cat, 经常性发呆，偶尔也会写些不成文章的方块字。 Comments Please enable JavaScript to view the comments powered by Disqus. QR-Code&trade; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://alpha080.github.com/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/">
+  <link rel="canonical" href="http://alpha080.github.com/about/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -49,7 +49,7 @@
   <header role="banner"><hgroup>
   <h1><a href="/">后飞的老笨鸟</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>BB is watching you!</h2>
   
 </hgroup>
 
@@ -69,139 +69,37 @@
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/projects">Projects</a></li>
+  <li><a href="/wiki">Wiki</a></li>
+  <li><a href="/about">About</a></li>
 </ul>
 
 </nav>
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">命令行下使用词典</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-12T08:22:00+08:00" pubdate data-updated="true">Aug 12<span>th</span>, 2013</time>
-        
-         | <a href="#disqus_thread">Comments</a>
-        
-      </p>
+    <h1 class="entry-title">About</h1>
     
   </header>
+  
+  <p>一只懒散的笨鸟，只会伸手，只会当 copy cat, 经常性发呆，偶尔也会写些不成文章的方块字。</p>
 
-
-<div class="entry-content"><p>Linux 下各种词典百花齐放，从我以前用的 stardict 到现在的 goldendict，个个功能都很强大，但是有时候我只想查词义，这时候觉得前面几个软件都过于重量级，所以就找了一些在命令行下使用的词典。</p>
-
-<h3>一、dictd</h3>
-
-<p>这是一个很&#8221;古老&#8221;的软件了，使用 dict 协议，gentoo源里面提供了很多词典，我比较喜欢使用 dictd-wn，也就是 <a href="http://wordnet.princeton.edu/">wordnet</a></p>
-
-<h4>安装</h4>
-
-<pre><code>emerge -av dictd-wn
-</code></pre>
-
-<h4>使用</h4>
-
-<p>如果想要搜索 &#8220;foo&#8221;，输入:</p>
-
-<pre><code>dict foo
-</code></pre>
-
-<p>上面的结果会把你安装的所有词典的查询结果显示出来，如果只想在 wordnet 里面查找，只要:</p>
-
-<pre><code>dict -d wn foo
-</code></pre>
-
-<p>不过每次都要输入这么长的命令实在是太烦人了，这时当然是要:</p>
-
-<pre><code>alias xxx="dict -d wn"
-</code></pre>
-
-<h3>二、wn</h3>
-
-<p>事实上 wn 就是 wordnet 在命令行下的查询命令，只不过输出的格式不佳，所以被我弃用了。
-如果一定要用，执行:</p>
-
-<pre><code>wn -over foo
-</code></pre>
-
-<h3>三、<a href="http://sourceforge.net/projects/yodao-free/">youdao-free</a></h3>
-
-<p>这是一个 python 脚本，用起来蛮方便的，输出格式也很好。下载下来后直接执行:</p>
-
-<pre><code>python dict.py foo
-</code></pre>
-
-<p>当然了，做为懒人，肯定要:</p>
-
-<pre><code>alias xxx="python dict.py"
-source .bashrc
-</code></pre>
-</div>
-
-
-  <footer>
-    <p class="meta">
+  
+    <footer>
       
-  
-
-<span class="byline author vcard">Posted by <span class="fn">alpha080</span></span>
-
       
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-08-12T08:22:00+08:00" pubdate data-updated="true">Aug 12<span>th</span>, 2013</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/cli/'>cli</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
+        <div class="sharing">
   
   
   
 </div>
 
-    
-    <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/03/03/hello-world/" title="Previous Post: hello world">&laquo; hello world</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2013/08/12/rake-new-post-chu-cuo/" title="Next Post: rake new_post 出错">rake new_post 出错 &raquo;</a>
-      
-    </p>
-  </footer>
+    </footer>
+  
 </article>
 
   <section>
@@ -215,23 +113,30 @@ source .bashrc
 <aside class="sidebar">
   
     <section>
+<h1>QR-Code<abbr title="The word 'QR Code' is a registered trademark of DENSO WAVE INCORPORATED. It applies only for the word 'QR Code', not for image.">&trade;</abbr></h1>
+<a href="http://alpha080.github.com/about/index.html"><img src="http://chart.apis.google.com/chart?chs=100x100&cht=qr&chld=|0&chco=165B94&chl=http://alpha080.github.com/about/index.html" alt="post-qrcode"></a></section>
+<section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2013/08/13/jquery-fundamentals-note-01/">jQuery Fundamentals 笔记 01</a>
+        <a href="/blog/20141016/">我所用到的 Sublimetext 插件</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/08/12/rake-new-post-chu-cuo/">rake new_post 出错</a>
+        <a href="/blog/20130824/">jQuery Fundamentals 笔记 02</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/">命令行下使用词典</a>
+        <a href="/blog/20130813/">jQuery Fundamentals 笔记 01</a>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/03/03/hello-world/">hello world</a>
+        <a href="/blog/20130812/">rake new_post 出错</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/20130812/">命令行下使用词典</a>
       </li>
     
   </ul>
@@ -270,6 +175,25 @@ source .bashrc
 
 
 
+<section>
+    <h1>Friends Link</h1>
+    <ul>
+        <li>
+        <a href="http://www.lainme.com">Lainme's Blog</a>
+        </li>
+    </ul>
+</section>
+<section>
+    <h1>License</h1>
+    <ul>
+        <li>
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/"><img  alt="知识共享许可协议" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/cn/88x31.png" /></a>
+    <br />
+        </li>
+        <li>
+        本作品由<a xmlns:cc="http://creativecommons.org/ns#" href="http://alpha080.github.io" property="cc:attributionName" rel="cc:attributionURL">alpha080</a>创作，采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/">知识共享署名-非商业性使用-相同方式共享 3.0 中国大陆许可协议</a>进行许可。
+        </li>
+</section>
 
   
 </aside>
@@ -278,7 +202,7 @@ source .bashrc
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - alpha080 -
+  Copyright &copy; 2014 - alpha080 -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
@@ -290,8 +214,8 @@ source .bashrc
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://alpha080.github.com/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/';
-        var disqus_url = 'http://alpha080.github.com/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/';
+        var disqus_identifier = 'http://alpha080.github.com/about/index.html';
+        var disqus_url = 'http://alpha080.github.com/about/index.html';
         var disqus_script = 'embed.js';
       
     (function () {

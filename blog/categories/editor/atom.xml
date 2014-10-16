@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: editor | 后飞的老笨鸟]]></title>
+  <link href="http://alpha080.github.com/blog/categories/editor/atom.xml" rel="self"/>
+  <link href="http://alpha080.github.com/"/>
+  <updated>2014-10-16T23:52:23+08:00</updated>
+  <id>http://alpha080.github.com/</id>
+  <author>
+    <name><![CDATA[alpha080]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[我所用到的 Sublimetext 插件]]></title>
+    <link href="http://alpha080.github.com/blog/20141016/"/>
+    <updated>2014-10-16T23:06:00+08:00</updated>
+    <id>http://alpha080.github.com/blog/my-sublime-plugins</id>
+    <content type="html"><![CDATA[<p>Sublimetext 是一个非常强大的编辑器，它的一些特性非常牛，比如 gotoanything, multiple selections, command palette. 不过也有一些不够
+好的地方，比如在 Linux 下汉字输入就要麻烦一点。由于工作中需要在 U 盘中装个图形界面编辑器( Windows xp 下)，而且 gvim 在U 盘下确实
+不如 Sublimetext，所以就有了今天的文章。</p>
+
+<p>我所用的 Sublimetext3 的插件有：</p>
+
+<ol>
+<li>Package Control</li>
+<li>git</li>
+<li>emmet</li>
+<li>SublimeCodeIntel</li>
+<li>Alignment</li>
+<li>Angularjs</li>
+<li>BracketHighlighter</li>
+<li>ColorHighlighter</li>
+<li>Inc-Dec-Value</li>
+<li>Modific</li>
+<li>Side Bar</li>
+<li>TabsExtra</li>
+<li>Tag</li>
+<li>Sublimelinter</li>
+<li>Arduino-like IDE</li>
+<li>Side Bar Enhancements</li>
+<li>ColorPicker</li>
+<li>Cheat Sheets</li>
+<li>Jquery</li>
+<li>Html5</li>
+<li>Vintageous</li>
+</ol>
+
+
+<p>什么时候也试试看 github 的 atom 编辑器跟 adobe 的 bracket 编辑器，好像它们也有很多吸引人的特性。所以我应该感谢老天把我生在这个编辑
+器百花齐放的时代么？</p>
+]]></content>
+  </entry>
+  
+</feed>

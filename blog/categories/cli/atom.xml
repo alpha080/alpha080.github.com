@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cli | 后飞的老笨鸟]]></title>
   <link href="http://alpha080.github.com/blog/categories/cli/atom.xml" rel="self"/>
   <link href="http://alpha080.github.com/"/>
-  <updated>2013-08-15T21:36:32+08:00</updated>
+  <updated>2014-10-16T23:52:23+08:00</updated>
   <id>http://alpha080.github.com/</id>
   <author>
     <name><![CDATA[alpha080]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[命令行下使用词典]]></title>
-    <link href="http://alpha080.github.com/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian/"/>
+    <link href="http://alpha080.github.com/blog/20130812/"/>
     <updated>2013-08-12T08:22:00+08:00</updated>
-    <id>http://alpha080.github.com/blog/2013/08/12/ming-ling-xing-xia-shi-yong-ci-dian</id>
+    <id>http://alpha080.github.com/blog/dict-in-the-terminal</id>
     <content type="html"><![CDATA[<p>Linux 下各种词典百花齐放，从我以前用的 stardict 到现在的 goldendict，个个功能都很强大，但是有时候我只想查词义，这时候觉得前面几个软件都过于重量级，所以就找了一些在命令行下使用的词典。</p>
 
 <h3>一、dictd</h3>

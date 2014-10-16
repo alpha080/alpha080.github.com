@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | 后飞的老笨鸟]]></title>
   <link href="http://alpha080.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://alpha080.github.com/"/>
-  <updated>2013-08-15T21:36:32+08:00</updated>
+  <updated>2014-10-16T23:52:23+08:00</updated>
   <id>http://alpha080.github.com/</id>
   <author>
     <name><![CDATA[alpha080]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[rake new_post 出错]]></title>
-    <link href="http://alpha080.github.com/blog/2013/08/12/rake-new-post-chu-cuo/"/>
+    <link href="http://alpha080.github.com/blog/20130812/"/>
     <updated>2013-08-12T19:49:00+08:00</updated>
-    <id>http://alpha080.github.com/blog/2013/08/12/rake-new-post-chu-cuo</id>
+    <id>http://alpha080.github.com/blog/rake-new-post-chu-cuo</id>
     <content type="html"><![CDATA[<p>今天更新博客的时候，运行命令提示错误:</p>
 
 <pre><code>You have already activated rake 0.9.6, but your Gemfile requires rake 0.9.2.2. Using bundle exec may solve this.
