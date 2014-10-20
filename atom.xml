@@ -4,7 +4,7 @@
   <title><![CDATA[后飞的老笨鸟]]></title>
   <link href="http://alpha080.github.com/atom.xml" rel="self"/>
   <link href="http://alpha080.github.com/"/>
-  <updated>2014-10-20T22:47:04+08:00</updated>
+  <updated>2014-10-20T23:32:35+08:00</updated>
   <id>http://alpha080.github.com/</id>
   <author>
     <name><![CDATA[alpha080]]></name>
@@ -51,18 +51,6 @@
 
 <p>什么时候也试试看 github 的 atom 编辑器跟 adobe 的 bracket 编辑器，好像它们也有很多吸引人的特性。所以我应该感谢老天把我生在这个编辑
 器百花齐放的时代么？</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[jQuery Fundamentals 笔记 02]]></title>
-    <link href="http://alpha080.github.com/blog/20130824/"/>
-    <updated>2013-08-24T08:07:00+08:00</updated>
-    <id>http://alpha080.github.com/blog/jquery-fundamentals-note-02</id>
-    <content type="html"><![CDATA[<figure class='code'><figcaption><span>Python hello.py</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='py'><span class='line'><span class="k">print</span> <span class="s">&#39;hello!&#39;</span>
-</span></code></pre></td></tr></table></div></figure>
-
 ]]></content>
   </entry>
   
